@@ -6,8 +6,9 @@
 
 <style>
 html {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-size: 16px;
+  text-transform: uppercase;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;

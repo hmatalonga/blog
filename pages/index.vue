@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h1 class="title">
-      Hugo Matalonga
+      <span>Hugo</span> Matalonga
     </h1>
     <h2 class="subtitle">
       I code & make things.
@@ -34,17 +34,22 @@ export default {
 }
 
 .title {
-  font-size: 84px;
+  font-size: 96px;
   font-weight: 500;
   color: white;
   letter-spacing: -.1rem;
   margin-bottom: 20px;
 }
 
+.title span {
+  display: block;
+  font-size: 192px;
+  line-height: 0.75;
+}
+
 .subtitle {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 .links {
@@ -82,11 +87,12 @@ export default {
   width: 100%;
   bottom: 2vh;
   padding: 0;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .copyright a {
   color: hsl(0, 0%, 84%);
+  text-decoration: none;
   transition: color .15s ease-in-out;
 }
 
