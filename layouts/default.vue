@@ -7,7 +7,7 @@
 <style>
 html {
   font-family: "Oswald", sans-serif;
-  font-size: 16px;
+  font-size: 2vmin;
   text-transform: uppercase;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

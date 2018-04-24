@@ -34,35 +34,35 @@ export default {
 }
 
 .title {
-  font-size: 96px;
+  font-size: 9.6vmin;
   font-weight: 500;
   color: white;
   letter-spacing: -.1rem;
-  margin-bottom: 20px;
+  margin-bottom: 2vmin;
 }
 
 .title span {
   display: block;
-  font-size: 192px;
+  font-size: 19.2vmin;
   line-height: 0.75;
 }
 
 .subtitle {
-  font-size: 18px;
+  font-size: 3.2vmin;
   font-weight: 400;
 }
 
 .links {
   position: fixed;
   width: 100%;
-  bottom: 10vh;
+  bottom: 8.5vh;
   padding: 0;
   list-style: none;
 }
 
 .links li {
   display: inline;
-  padding: 0 10px;
+  padding: 0 1vmin;
 }
 
 .links li:first-child {
@@ -85,9 +85,9 @@ export default {
 .copyright {
   position: fixed;
   width: 100%;
-  bottom: 2vh;
+  bottom: 1vh;
   padding: 0;
-  font-size: 12px;
+  font-size: 1.6vmin;
 }
 
 .copyright a {
