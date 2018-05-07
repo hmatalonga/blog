@@ -19,6 +19,14 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Google Analytics
+  */
+  modules: [
+    ['@nuxtjs/google-analytics', {
+      id: 'UA-49971884-1'
+    }]
+  ],
+  /*
   ** Build configuration
   */
   build: {
