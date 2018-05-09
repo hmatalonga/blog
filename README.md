@@ -1,9 +1,10 @@
 # hmatalonga.com
 
-> Nuxt.js project
+[![Build Status](https://travis-ci.org/hmatalonga/hmatalonga.github.io.svg?branch=develop)](https://travis-ci.org/hmatalonga/hmatalonga.github.io)
+
+> Personal website
 
 ## Build Setup
-
 ``` bash
 # install dependencies
 $ npm install # Or yarn install
