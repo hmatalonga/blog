@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - 'lts/*'
+
+cache: yarn
+
+script: yarn run generate
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  target-branch: master
+  local-dir: dist/
+  fqdn: hmatalonga.com
+  on:
+    branch: develop
