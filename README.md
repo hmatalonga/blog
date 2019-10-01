@@ -1,6 +1,7 @@
 # hmatalonga.com
 
-[![Build Status](https://travis-ci.org/hmatalonga/hmatalonga.github.io.svg?branch=master)](https://travis-ci.org/hmatalonga/hmatalonga.github.io)
+[![Build Status](https://travis-ci.org/hmatalonga/blog.svg?branch=master)](https://travis-ci.org/hmatalonga/blog)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/95b3d916-c247-40ea-b52a-fe3d2169991c/deploy-status)](https://app.netlify.com/sites/nostalgic-meitner-6578e6/deploys)
 
 
 > Personal website

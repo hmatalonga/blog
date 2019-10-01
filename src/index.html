@@ -15,7 +15,7 @@
           window.__onThemeChange(newTheme);
         }
 
-        var preferredTheme = 'dark';
+        var preferredTheme;
         try {
           preferredTheme = localStorage.getItem('theme');
         } catch (err) { }
