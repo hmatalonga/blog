@@ -5,14 +5,14 @@
 
     <div class="container">
       <h1 class="title">Hi there! I'm Hugo Matalonga.</h1>
-      <h2 class="subtitle">I'm a Full-stack developer and a Machine Learning enthusiast.</h2>
+      <h2 class="subtitle">I'm a Full-stack developer and a Machine Learning enthusiast. 💻</h2>
       <p class="paragraph">I work as a freelancer and I also do academic research on topic of Green Computing focused on mobile devices.</p>
       <p class="paragraph">
         I am an avid fan of <a href="//github.com/hmatalonga">open-source</a>,
         you can check one of my main projects called <a href="//greenhubproject.org">GreenHub</a>.
       </p>
       <p class="paragraph">Follow me on <a href="//twitter.com/hmatalonga">Twitter</a>.</p>
-      <p class="paragraph"><a href="mailto:hello@hmatalonga.com">Drop me a line.</a></p>
+      <p class="paragraph"><span class="icon">📬</span><a href="mailto:hello@hmatalonga.com">Drop me a line.</a></p>
     </div>
 
   </Layout>
@@ -51,6 +51,9 @@ export default {
     a {
       color: var(--title-color);
       font-weight: 600;
+    }
+    .icon {
+      margin-right: .5rem;
     }
   }
 }
