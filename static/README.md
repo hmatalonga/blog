@@ -1,11 +1,3 @@
-# STATIC
+Add static files here. Files in this directory will be copied directly to `dist` folder during build. For example, /static/robots.txt will be located at https://yoursite.com/robots.txt.
 
-This directory contains your static files.
-Each file inside this directory is mapped to /.
-
-Example: /static/robots.txt is mapped as /robots.txt.
-
-More information about the usage of this directory in the documentation:
-https://nuxtjs.org/guide/assets#static
-
-**This directory is not required, you can delete it if you don't want to use it.**
+This file should be deleted.

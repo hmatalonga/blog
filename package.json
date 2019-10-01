@@ -1,26 +1,20 @@
 {
   "name": "hmatalonga.com",
-  "version": "1.0.0",
-  "description": "Personal website",
-  "author": "Hugo Matalonga <hmatalonga@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "build": "gridsome build",
+    "develop": "gridsome develop",
+    "explore": "gridsome explore"
   },
   "dependencies": {
-    "nuxt": "latest"
+    "@gridsome/plugin-google-analytics": "^0.1.0",
+    "@gridsome/remark-prismjs": "^0.2.0",
+    "@gridsome/source-filesystem": "^0.6.0",
+    "@gridsome/transformer-remark": "^0.3.0",
+    "gridsome": "^0.7.0"
   },
   "devDependencies": {
-    "@nuxtjs/google-analytics": "^2.0.2",
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0"
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0"
   }
 }

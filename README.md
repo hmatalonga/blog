@@ -1,23 +1,21 @@
 # hmatalonga.com
 
-[![Build Status](https://travis-ci.org/hmatalonga/hmatalonga.github.io.svg?branch=develop)](https://travis-ci.org/hmatalonga/hmatalonga.github.io)
+[![Build Status](https://travis-ci.org/hmatalonga/hmatalonga.github.io.svg?branch=master)](https://travis-ci.org/hmatalonga/hmatalonga.github.io)
+
 
 > Personal website
 
-## Build Setup
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+## Install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### 1. Install Gridsome CLI tool if you don't have
 
-# build for production and launch server
-$ npm run build
-$ npm start
+`npm install --global @gridsome/cli`
 
-# generate static project
-$ npm run generate
-```
+### 2. Install this starter
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+1. `gridsome create my-gridsome-site https://github.com/gridsome/gridsome-starter-blog.git`
+2. `cd my-gridsome-site` to open folder
+3. `gridsome develop` to start local dev server at `http://localhost:8080`
+4. Happy coding 🎉🙌
+
+For detailed explanation on how things work, checkout the [Gridsome docs](https://gridsome.org/docs/).
