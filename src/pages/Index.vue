@@ -6,20 +6,28 @@
     <div class="container">
       <h1 class="title">Hi there! I'm Hugo Matalonga.</h1>
       <h2 class="subtitle">I'm a Full-stack developer and a Machine Learning enthusiast. 💻</h2>
-      <p class="paragraph">I work as a freelancer and I also do academic research on topic of Green Computing focused on mobile devices.</p>
-      <p class="paragraph">
+      <div class="paragraph">I work as a freelancer and I also do academic research on topic of Green Computing focused on mobile devices.</div>
+      <div class="paragraph">
         I am an avid fan of <a href="//github.com/hmatalonga">open-source</a>,
         you can check one of my main projects called <a href="//greenhubproject.org">GreenHub</a>.
-      </p>
-      <p class="paragraph">Follow me on <a href="//twitter.com/hmatalonga">Twitter</a>.</p>
-      <p class="paragraph"><span class="icon">📬</span><a href="mailto:hello@hmatalonga.com">Drop me a line.</a></p>
+      </div>
+      <div class="paragraph">Follow me on <a href="//twitter.com/hmatalonga">Twitter</a>.</div>
+      <div class="paragraph"><span class="icon">📬</span><a href="mailto:hello@hmatalonga.com">Drop me a line.</a></div>
+      <div class="footnote">
+        <div class="hint">Do you like my work?</div>
+        <BuyMeACoffee/> 
+      </div>
     </div>
 
   </Layout>
 </template>
 
 <script>
+import BuyMeACoffee from "~/components/BuyMeACoffee.vue"
 export default {
+  components: {
+    BuyMeACoffee
+  },
   metaInfo: {
     title: 'About'
   }
@@ -54,6 +62,15 @@ export default {
     }
     .icon {
       margin-right: .5rem;
+    }
+  }
+
+  .footnote {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    .hint {
+      font-size: .8rem;
+      margin-bottom: 5px;
     }
   }
 }
