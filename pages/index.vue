@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex flex-col max-w-xl min-h-screen justify-center px-6 mx-auto lg:max-w-3xl lg:px-0"
-  >
+  <div>
     <h1
       class="text-5xl font-semibold leading-tight text-gray-800 md:text-6xl lg:text-7xl lg:font-medium xl:text-8xl"
     >
@@ -58,7 +56,3 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {}
-</script>
