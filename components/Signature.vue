@@ -8,12 +8,14 @@
       alt="Hugo Matalonga"
     />
     <div class="mt-2 text-center">
-      <div class="text-gray-500 text-sm">Written by</div>
-      <div class="text-gray-800 text-lg font-semibold">Hugo Matalonga</div>
+      <div class="text-xs text-gray-500 sm:text-sm">Written by</div>
+      <div class="text-base text-gray-800 font-semibold sm:text-lg">
+        Hugo Matalonga
+      </div>
     </div>
     <div class="pb-12 mt-8">
       <nuxt-link
-        class="text-indigo-500 font-semibold hover:text-indigo-600"
+        class="text-sm text-indigo-500 font-semibold hover:text-indigo-600 sm:text-base"
         to="/blog"
         >← View All Posts</nuxt-link
       >
