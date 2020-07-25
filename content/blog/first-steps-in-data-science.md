@@ -16,8 +16,8 @@ During my Masters, I was introduced to the mathematics concepts behind machine l
 
 Now I am close to finish my Masters degree. I feel like my learning path of data science barely started and there are so many fascinating new use cases where different industries can benefit from the power of data. I think this video, by *Cassie Kozyrkov*, beautifully explains applied machine learning and the "potential of turning information into better action" to quote her.
 
-<div class="embed-responsive-16by9 relative overflow-hidden">
-  <iframe class="w-full h-full absolute top-0 left-0 border-none" src="https://www.youtube.com/embed/cpGeXofndoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="embed-responsive-16by9">
+  <iframe src="https://www.youtube.com/embed/cpGeXofndoY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 So as I take my first steps into this new career, I came upon this piece of advice, to [start blogging about data science](http://varianceexplained.org/r/start-blog/) and document my learning journey. Where I will explore new topics and algorithms, practice and develop my skills and track my progress over time. I feel very lucky to be doing what I really love, and I am very excited to see how the world will change!
