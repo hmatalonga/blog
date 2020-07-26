@@ -32,7 +32,7 @@ export default {
   },
   head() {
     return {
-      title: 'Blog | Hugo Matalonga',
+      title: 'Blog',
     }
   },
 }

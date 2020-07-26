@@ -1,3 +1,5 @@
+const URL = 'https://hmatalonga.com'
+
 export default {
   /*
    ** Nuxt rendering mode
@@ -14,7 +16,13 @@ export default {
    ** See https://nuxtjs.org/api/configuration-head
    */
   head: {
-    title: 'Hugo Matalonga',
+    titleTemplate: (chunk) => {
+      if (chunk) {
+        return `${chunk} | Hugo Matalonga`
+      }
+
+      return 'Hugo Matalonga'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -23,6 +31,26 @@ export default {
         name: 'description',
         content:
           'My name is Hugo Matalonga, and I am a data scientist and a web developer based in Portugal.',
+      },
+      // Open Graph
+      {
+        hid: 'og:site_name',
+        property: 'og:site_name',
+        content: 'Hugo Matalonga',
+      },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: URL },
+      // Twitter Card
+      {
+        hid: 'twitter:card',
+        name: 'twitter:card',
+        content: 'summary_large_image',
+      },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@hmatalonga' },
+      {
+        hid: 'twitter:title',
+        name: 'twitter:title',
+        content: 'Hugo Matalonga',
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
