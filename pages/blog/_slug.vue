@@ -40,6 +40,12 @@ export default {
   head() {
     return {
       title: this.page.title,
+      link: [
+        {
+          rel: 'canonical',
+          href: `${process.env.BASE_URL}${this.$route.fullPath}`,
+        },
+      ],
       meta: [
         {
           hid: 'description',
@@ -52,6 +58,11 @@ export default {
           hid: 'og:description',
           property: 'og:description',
           content: this.page.description,
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}${this.$route.fullPath}`,
         },
         // Twitter Card
         {

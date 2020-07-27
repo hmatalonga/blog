@@ -1,5 +1,3 @@
-const URL = 'https://hmatalonga.com'
-
 export default {
   /*
    ** Nuxt rendering mode
@@ -23,6 +21,9 @@ export default {
 
       return 'Hugo Matalonga'
     },
+    htmlAttrs: {
+      lang: 'en',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -39,7 +40,7 @@ export default {
         content: 'Hugo Matalonga',
       },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: URL },
+      { hid: 'og:url', property: 'og:url', content: process.env.BASE_URL },
       // Twitter Card
       {
         hid: 'twitter:card',
@@ -77,6 +78,7 @@ export default {
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/dotenv',
     [
       '@nuxtjs/google-analytics',
       {
