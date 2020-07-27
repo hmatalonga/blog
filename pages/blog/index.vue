@@ -33,6 +33,19 @@ export default {
   head() {
     return {
       title: 'Blog',
+      link: [
+        {
+          rel: 'canonical',
+          href: `https://hmatalonga.com${this.$route.path}`,
+        },
+      ],
+      meta: [
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: `https://hmatalonga.com${this.$route.path}`,
+        },
+      ],
     }
   },
 }

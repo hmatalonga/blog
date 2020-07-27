@@ -43,7 +43,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `${process.env.BASE_URL}${this.$route.fullPath}`,
+          href: `https://hmatalonga.com${this.$route.path}`,
         },
       ],
       meta: [
@@ -62,7 +62,7 @@ export default {
         {
           hid: 'og:url',
           property: 'og:url',
-          content: `${process.env.BASE_URL}${this.$route.fullPath}`,
+          content: `https://hmatalonga.com${this.$route.path}`,
         },
         // Twitter Card
         {
