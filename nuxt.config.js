@@ -26,12 +26,6 @@ export default {
     htmlAttrs: {
       lang: 'en',
     },
-    link: [
-      {
-        rel: 'canonical',
-        href: BASE_URL,
-      },
-    ],
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -62,7 +56,10 @@ export default {
         content: 'Hugo Matalonga',
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'canonical', href: BASE_URL },
+    ],
   },
   /*
    ** Global CSS
@@ -105,6 +102,7 @@ export default {
    ** See https://content.nuxtjs.org/configuration
    */
   content: {
+    liveEdit: false,
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',
