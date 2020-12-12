@@ -96,6 +96,7 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxt/feed',
   ],
   /*
    ** Content module configuration
@@ -114,4 +115,45 @@ export default {
    ** See https://nuxtjs.org/api/configuration-build/
    */
   build: {},
+  feed() {
+    const baseUrlArticles = 'https://mywebsite.com/articles'
+    const baseLinkFeedArticles = '/feed/articles'
+    const feedFormats = {
+      rss: { type: 'rss2', file: 'rss.xml' },
+      json: { type: 'json1', file: 'feed.json' },
+    }
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: 'Hugo Matalonga Blog',
+        description:
+          'My name is Hugo Matalonga, and I am a data scientist and a web developer based in Portugal.',
+        link: baseUrlArticles,
+      }
+      const articles = await $content('articles')
+        .where({ published: true })
+        .sortBy('date', 'desc')
+        .fetch()
+
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          date: article.date,
+          description: article.summary,
+          content: article.summary,
+        })
+      })
+    }
+
+    return Object.values(feedFormats).map(({ file, type }) => ({
+      path: `${baseLinkFeedArticles}/${file}`,
+      type,
+      create: createFeedArticles,
+    }))
+  },
 }
