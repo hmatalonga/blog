@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: hmatalonga.com
+Token: d8d90ebe1c3b3af398d7ab50ce0386165ff528f7579d4cd98cc86a18bb86967e
