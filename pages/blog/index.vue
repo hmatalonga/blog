@@ -15,8 +15,8 @@
         <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
       </li>
     </ul>
-  </div></template
->
+  </div>
+</template>
 
 <script>
 export default {

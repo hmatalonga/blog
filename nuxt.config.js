@@ -96,6 +96,7 @@ export default {
   modules: [
     // Doc: https://github.com/nuxt/content
     '@nuxt/content',
+    '@nuxtjs/feed',
   ],
   /*
    ** Content module configuration
@@ -109,6 +110,56 @@ export default {
       },
     },
   },
+
+  feed() {
+    const baseUrlArticles = 'https://hmatalonga.com/blog'
+    const { $content } = require('@nuxt/content')
+
+    const createFeedArticles = async function (feed) {
+      feed.options = {
+        title: 'Hugo Matalonga',
+        description:
+          'My name is Hugo Matalonga, and I am a data scientist and a web developer based in Portugal.',
+        link: baseUrlArticles,
+      }
+      const articles = await $content('blog').fetch()
+
+      articles.forEach((article) => {
+        const url = `${baseUrlArticles}/${article.slug}`
+
+        feed.addItem({
+          title: article.title,
+          id: url,
+          link: url,
+          description: article.description,
+          content: article.description,
+          author: 'Hugo Matalonga',
+        })
+      })
+
+      feed.addContributor({
+        name: 'Hugo Matalonga',
+        email: 'hello@hmatalonga.com',
+        link: 'https://hmatalonga.com',
+      })
+    }
+
+    return [
+      {
+        path: '/feed.xml',
+        create: createFeedArticles,
+        cacheTime: 1000 * 60 * 15,
+        type: 'rss2',
+      },
+      {
+        path: '/feed.json',
+        create: createFeedArticles,
+        cacheTime: 1000 * 60 * 15,
+        type: 'json1',
+      },
+    ]
+  },
+
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
