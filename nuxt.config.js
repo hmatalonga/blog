@@ -122,7 +122,10 @@ export default {
           'My name is Hugo Matalonga, and I am a data scientist and a web developer based in Portugal.',
         link: baseUrlArticles,
       }
-      const articles = await $content('blog').fetch()
+      const articles = await $content('blog')
+        .where({ published: true })
+        .sortBy('date', 'desc')
+        .fetch()
 
       articles.forEach((article) => {
         const url = `${baseUrlArticles}/${article.slug}`
