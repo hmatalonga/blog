@@ -2,11 +2,6 @@ const BASE_URL = 'https://hmatalonga.com'
 
 export default {
   /*
-   ** Nuxt rendering mode
-   ** See https://nuxtjs.org/api/configuration-mode
-   */
-  mode: 'universal',
-  /*
    ** Nuxt target
    ** See https://nuxtjs.org/api/configuration-target
    */
@@ -58,7 +53,6 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'canonical', href: BASE_URL },
     ],
   },
   /*
@@ -106,7 +100,7 @@ export default {
     liveEdit: false,
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css',
+        theme: 'prism-themes/themes/prism-nord.css',
       },
     },
   },

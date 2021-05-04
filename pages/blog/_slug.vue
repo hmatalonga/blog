@@ -2,14 +2,14 @@
   <div>
     <div class="mb-8 md:mb-10">
       <h1
-        class="font-semibold leading-tight text-gray-800 text-3xl md:text-4xl lg:text-5xl"
+        class="font-medium leading-tight text-gray-800 text-3xl md:text-4xl lg:text-5xl"
       >
         {{ page.title }}
       </h1>
       <p class="text-gray-600 text-base md:text-lg my-3">{{ timestamp }}</p>
     </div>
     <nuxt-content
-      class="prose prose-sm sm:prose-sm lg:prose-lg xl:prose-xl max-w-none"
+      class="prose prose-sm lg:prose-lg max-w-none"
       :document="page"
     />
     <Signature />

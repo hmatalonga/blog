@@ -8,7 +8,7 @@
       alt="Hugo Matalonga"
     />
     <div class="mt-2 text-center">
-      <div class="text-xs text-gray-500 sm:text-sm">Written by</div>
+      <div class="text-xs text-gray-600 sm:text-sm">Written by</div>
       <div class="text-base text-gray-800 font-semibold sm:text-lg">
         Hugo Matalonga
       </div>

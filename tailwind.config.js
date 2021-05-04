@@ -14,17 +14,16 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
+          color: theme('colors.gray.800'),
           a: {
             color: theme('colors.indigo.500'),
             '&:hover': {
               color: theme('colors.indigo.600'),
             },
           },
-          code: {
-            backgroundColor: theme('colors.gray.100'),
-          },
           'pre code': {
-            fontSize: theme('fontSize.base'),
+            fontSize: theme('fontSize.sm'),
+            lineHeight: theme('lineHeight.snug'),
           },
         },
       },
