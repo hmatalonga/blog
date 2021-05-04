@@ -9,7 +9,7 @@
       <p class="text-gray-600 text-base md:text-lg my-3">{{ timestamp }}</p>
     </div>
     <nuxt-content
-      class="prose prose-sm lg:prose-lg max-w-none"
+      class="prose sm:prose-sm lg:prose-lg max-w-none"
       :document="page"
     />
     <Signature />

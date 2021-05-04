@@ -16,3 +16,13 @@
 .prose :not(pre) > code.language-text {
   white-space: pre-line;
 }
+
+.prose .week-entry ul {
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.prose .week-entry li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
