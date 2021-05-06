@@ -15,7 +15,7 @@ description: "Learning journey and work stuff. List of things I find interesting
 - I worked on the titanic challenge blog post.
 
 **📚 Learnings**
-- I have been learning about different methods of comparing datasets. While there are a few more commonly used, there is no one solution that fits all kinds of data distributions. In my particular case, I have two groups of non-normal data distributions with continuous numerical features. After doing some research, I selected the following options: Wilcoxon, Mann-Whitney tests. And I will also use Spearman's rank correlation coefficient and relative entropy.
+- I have been learning about different methods of comparing datasets. While there are a few more commonly used, there is no one solution that fits all kinds of data distributions. In my particular case, I have two groups of non-normal data distributions with continuous numerical features. After doing some research, I selected the following options: Wilcoxon and Mann-Whitney tests. And I will also use Spearman's rank correlation coefficient and relative entropy.
 
 **💡 Interesting stuff**
 - Kaggle released a new feature that allows sharing of notebooks. [Link](https://www.kaggle.com/product-feedback/230748)
