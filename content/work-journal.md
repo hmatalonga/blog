@@ -5,6 +5,12 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="work-journal space-y-24">
 
+<!-- <div class="week-entry">
+
+### Week of May 10 - May 16, 2021
+
+</div> -->
+
 <div class="week-entry">
 
 ### Week of May 3 - May 9, 2021
@@ -21,7 +27,6 @@ description: "Learning journey and work stuff. List of things I find interesting
 - Kaggle released a new feature that allows sharing of notebooks. [Link](https://www.kaggle.com/product-feedback/230748)
 - Emerging Architectures for Modern Data Infrastructure. [Link](https://a16z.com/2020/10/15/the-emerging-architectures-for-modern-data-infrastructure/)
 - Repository about Data Science in Production. [Link](https://github.com/eugeneyan/applied-ml)
-
 
 </div>
 

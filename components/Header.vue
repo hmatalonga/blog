@@ -14,7 +14,7 @@
           <nuxt-link class="hover:text-gray-800" to="/blog">Blog</nuxt-link>
         </div>
         <div>
-          <a href="/feed.xml">
+          <a href="/feed.xml" aria-label="RSS Feed">
             <svg
               class="current-color w-5 h-5"
               xmlns="http://www.w3.org/2000/svg"

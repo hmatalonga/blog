@@ -11,7 +11,7 @@
     </h2>
     <div class="mt-8 md:mt-10 xl:mt-16"></div>
     <nuxt-content
-      class="prose sm:prose-sm lg:prose-lg max-w-none"
+      class="prose sm:prose-sm md:prose-lg max-w-none"
       :document="page"
     />
   </div>

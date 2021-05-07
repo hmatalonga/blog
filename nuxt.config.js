@@ -83,6 +83,7 @@ export default {
         id: 'UA-49971884-1',
       },
     ],
+    '@nuxt/postcss8'
   ],
   /*
    ** Nuxt.js modules
@@ -156,7 +157,9 @@ export default {
       },
     ]
   },
-
+  tailwindcss: {
+    jit: true
+  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/

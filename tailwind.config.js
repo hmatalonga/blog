@@ -5,6 +5,10 @@
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 module.exports = {
+  mode: 'jit',
+  future: {
+    purgeLayersByDefault: true,
+  },
   theme: {
     extend: (theme) => ({
       fontFamily: {
@@ -14,12 +18,8 @@ module.exports = {
     typography: (theme) => ({
       default: {
         css: {
-          color: theme('colors.gray.800'),
           a: {
-            color: theme('colors.indigo.500'),
-            '&:hover': {
-              color: theme('colors.indigo.600'),
-            },
+            color: theme('colors.blue.600'),
           },
           'pre code': {
             fontSize: theme('fontSize.sm'),
