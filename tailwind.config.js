@@ -4,17 +4,20 @@
  ** Docs: https://tailwindcss.com/docs/configuration
  ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   mode: 'jit',
   future: {
     purgeLayersByDefault: true,
   },
   theme: {
-    extend: (theme) => ({
+    extend: {
       fontFamily: {
-        sans: ['Inter', ...theme('fontFamily.sans')],
+        sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
-    }),
+    },
     typography: (theme) => ({
       default: {
         css: {
