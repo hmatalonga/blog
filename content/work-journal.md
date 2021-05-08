@@ -18,7 +18,7 @@ description: "Learning journey and work stuff. List of things I find interesting
 **💻 Work**
 - Created this work journal page! I realized it is an excellent complement to my #66DaysofData tweets. [Link](https://twitter.com/search?lang=pt&q=(%2366DaysofData)%20(from%3Ahmatalonga)&src=typed_query)
 - I did some writing on my master thesis. To keep up with the schedule.
-- I worked on the titanic challenge blog post.
+- I published a blog post about the Titanic dataset.
 
 **📚 Learnings**
 - I have been learning about different methods of comparing datasets. While there are a few more commonly used, there is no one solution that fits all kinds of data distributions. In my particular case, I have two groups of non-normal data distributions with continuous numerical features. After doing some research, I selected the following options: Wilcoxon and Mann-Whitney tests. And I will also use Spearman's rank correlation coefficient and relative entropy.
