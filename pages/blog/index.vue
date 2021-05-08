@@ -6,6 +6,17 @@
       Blog
     </h1>
     <div class="mt-8 md:mt-10 xl:mt-16"></div>
+    <h2 class="mt-6 text-lg text-gray-700 md:text-xl lg:text-2xl">
+      This is where you can find my writings. If you like my content, please
+      consider
+      <a
+        class="text-indigo-600 underline"
+        href="https://www.buymeacoffee.com/hmatalonga"
+        target="_blank"
+        >buying me a coffee</a
+      >.
+    </h2>
+    <div class="mt-8 md:mt-10 xl:mt-16"></div>
     <ul class="list-none leading-snug space-y-8">
       <li
         v-for="post of posts"

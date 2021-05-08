@@ -83,7 +83,7 @@ export default {
         id: 'UA-49971884-1',
       },
     ],
-    '@nuxt/postcss8'
+    '@nuxt/postcss8',
   ],
   /*
    ** Nuxt.js modules

@@ -22,7 +22,7 @@ module.exports = {
       default: {
         css: {
           a: {
-            color: theme('colors.blue.600'),
+            color: theme('colors.indigo.600'),
           },
           'pre code': {
             fontSize: theme('fontSize.sm'),

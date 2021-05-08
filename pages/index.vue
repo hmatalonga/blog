@@ -54,5 +54,36 @@
         ><span>GitHub</span></a
       >
     </div>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-10 md:mt-16 lg:mt-20"
+    >
+      <div>
+        <h2 class="text-gray-800 font-semibold text-lg lg:text-xl xl:text-2xl">
+          Projects
+        </h2>
+        <div class="mt-2 md:mt-4 lg:mt-6">
+          <p class="text-gray-700 text-base lg:text-lg">
+            Currently, I am working in Academia as a Researcher. My main focus
+            is on Privacy-Preserving Machine Learning and Transfer Learning with
+            tree-based models.
+          </p>
+        </div>
+      </div>
+      <div>
+        <h2 class="text-gray-800 font-semibold text-lg lg:text-xl xl:text-2xl">
+          Blog
+        </h2>
+        <div class="mt-2 md:mt-4 lg:mt-6">
+          <p class="text-gray-700 text-base lg:text-lg">
+            In
+            <nuxt-link class="text-indigo-600 underline" to="/blog"
+              >my blog</nuxt-link
+            >, I share what I have been learning and some projects I have worked
+            on. I mostly write about Data Science, Machine Learning, among other
+            topics I am interested in.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>

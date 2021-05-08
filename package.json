@@ -27,6 +27,7 @@
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-nuxt": "^1.0.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "nuxt-vite": "0.0.37",
     "postcss": "^8.2.14",
     "prettier": "^2.2.1"
   }
