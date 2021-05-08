@@ -2,7 +2,7 @@
 title: 🚀 First steps in Data Science
 date: 2020-07-25
 published: true
-tags: []
+tags: ['Growth']
 description: 'So as I take my first steps into this new career, I came upon this piece of advice, to start blogging about data science and document my learning journey. Where I will explore new topics and algorithms, practice and develop my skills and track my progress over time.'
 ---
 
