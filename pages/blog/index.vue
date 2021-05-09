@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData({ $content }) {
     const posts = await $content('blog')
       .where({ published: true })
       .sortBy('date', 'desc')
@@ -52,9 +52,35 @@ export default {
       ],
       meta: [
         {
+          hid: 'description',
+          name: 'description',
+          content:
+            'In my blog, I share what I have been learning and some projects I have worked on. I mostly write about Data Science, Machine Learning, among other topics I am interested in.',
+        },
+        // Open Graph
+        { hid: 'og:title', property: 'og:title', content: 'Blog' },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'In my blog, I share what I have been learning and some projects I have worked on. I mostly write about Data Science, Machine Learning, among other topics I am interested in.',
+        },
+        {
           hid: 'og:url',
           property: 'og:url',
           content: `https://hmatalonga.com${this.$route.path}`,
+        },
+        // Twitter Card
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: 'Blog',
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content:
+            'In my blog, I share what I have been learning and some projects I have worked on. I mostly write about Data Science, Machine Learning, among other topics I am interested in.',
         },
       ],
     }

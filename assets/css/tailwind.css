@@ -4,9 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-body {
-  @apply bg-white;
-}
 
 .embed-responsive-16by9 {
   padding-top: 56.25%;
