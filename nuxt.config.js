@@ -93,6 +93,20 @@ export default {
     '@nuxt/content',
     '@nuxtjs/feed',
   ],
+  hooks: {
+    'content:file:beforeInsert': (document) => {
+      if (document.extension === '.md') {
+        const tinytime = require('tinytime')
+
+        const { text } = require('reading-time')(document.text)
+        const timestamp = (document.date !== undefined) ?
+          tinytime('{MM} {DD}, {YYYY}').render(new Date(document.date)) : ''
+
+        document.readingTime = text
+        document.timestamp = timestamp
+      }
+    }
+  },
   /*
    ** Content module configuration
    ** See https://content.nuxtjs.org/configuration
@@ -105,7 +119,6 @@ export default {
       },
     },
   },
-
   feed() {
     const baseUrlArticles = 'https://hmatalonga.com/blog'
     const { $content } = require('@nuxt/content')

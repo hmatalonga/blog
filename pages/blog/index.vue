@@ -18,12 +18,21 @@
     </h2>
     <div class="mt-8 md:mt-10 xl:mt-16"></div>
     <ul class="list-none leading-snug space-y-8">
-      <li
-        v-for="post of posts"
-        :key="post.slug"
-        class="mt-1 text-lg text-gray-800 font-semibold md:text-2xl"
-      >
-        <nuxt-link :to="post.path">{{ post.title }}</nuxt-link>
+      <li v-for="post of posts" :key="post.slug" class="mt-1">
+        <nuxt-link
+          class="font-semibold text-gray-800 text-lg md:text-xl lg:text-2xl"
+          :to="post.path"
+          >{{ post.title }}</nuxt-link
+        >
+        <div
+          class="metadata flex justify-start items-center space-x-2 text-gray-600 text-sm md:text-base lg:text-lg mt-2"
+        >
+          <div>{{ post.timestamp }}</div>
+          <span></span>
+          <div>{{ post.readingTime }}</div>
+          <span></span>
+          <div>{{ post.tags[0] }}</div>
+        </div>
       </li>
     </ul>
   </div>

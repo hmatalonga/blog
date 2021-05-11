@@ -6,9 +6,18 @@
       >
         {{ page.title }}
       </h1>
-      <p class="text-gray-600 text-base md:text-lg my-3">{{ timestamp }}</p>
+      <div
+        class="metadata flex justify-start items-center space-x-2 text-gray-600 text-base md:text-lg mt-2"
+      >
+        <div>{{ page.timestamp }}</div>
+        <span></span>
+        <div>{{ page.readingTime }}</div>
+        <span></span>
+        <div>{{ page.tags[0] }}</div>
+      </div>
     </div>
     <nuxt-content
+      •
       class="prose sm:prose-sm md:prose-lg max-w-none"
       :document="page"
     />
@@ -17,7 +26,6 @@
 </template>
 
 <script>
-import tinytime from 'tinytime'
 import Signature from '~/components/Signature.vue'
 
 export default {
@@ -34,7 +42,6 @@ export default {
 
     return {
       page,
-      timestamp: tinytime('{MM} {DD}, {YYYY}').render(new Date(page.date)),
     }
   },
   head() {

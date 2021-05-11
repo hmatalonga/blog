@@ -14,6 +14,10 @@
   @apply w-full h-full absolute top-0 left-0 border-none;
 }
 
+.metadata > span::after {
+  content: '\2022';
+}
+
 .prose :not(pre) > code.language-text {
   white-space: pre-line;
 }
