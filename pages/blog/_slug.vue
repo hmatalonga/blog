@@ -7,7 +7,7 @@
         {{ page.title }}
       </h1>
       <div
-        class="metadata flex justify-start items-center space-x-2 text-gray-600 text-base md:text-lg mt-2"
+        class="metadata flex justify-start items-center space-x-2 text-gray-600 text-base md:text-lg lg:text-xl mt-2"
       >
         <div>{{ page.timestamp }}</div>
         <span></span>
@@ -17,7 +17,6 @@
       </div>
     </div>
     <nuxt-content
-      •
       class="prose sm:prose-sm md:prose-lg max-w-none"
       :document="page"
     />
