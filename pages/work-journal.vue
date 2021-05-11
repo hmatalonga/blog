@@ -10,10 +10,7 @@
       Learning journey and work stuff. Updated weekly.
     </h2>
     <div class="mt-8 md:mt-10 xl:mt-16"></div>
-    <nuxt-content
-      class="prose sm:prose-sm md:prose-lg max-w-none"
-      :document="page"
-    />
+    <nuxt-content class="prose md:prose-lg max-w-none" :document="page" />
   </div>
 </template>
 

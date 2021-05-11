@@ -2,7 +2,7 @@
   <div>
     <div class="mb-8 md:mb-10">
       <h1
-        class="font-medium leading-tight text-gray-800 text-3xl md:text-4xl lg:text-5xl"
+        class="font-semibold leading-tight text-gray-800 text-2xl md:text-3xl lg:text-4xl"
       >
         {{ page.title }}
       </h1>
@@ -16,10 +16,7 @@
         <div>{{ page.tags[0] }}</div>
       </div>
     </div>
-    <nuxt-content
-      class="prose sm:prose-sm md:prose-lg max-w-none"
-      :document="page"
-    />
+    <nuxt-content class="prose md:prose-lg max-w-none" :document="page" />
     <Signature />
   </div>
 </template>
