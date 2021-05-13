@@ -5,11 +5,18 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="work-journal space-y-24">
 
-<!-- <div class="week-entry">
+<div class="week-entry">
 
 ### Week of May 10 - May 16, 2021
 
-</div> -->
+**💻 Work**
+- I did some more writing on my master thesis.
+- I published a blog post about building a Second Brain.
+
+**💡 Interesting stuff**
+- DataTalks.Club Podcast: What I Learned After Interviewing 300 Data Scientists. [Link](https://datatalks.club/podcast/s03e04-interviewing-300-data-scientists.html)
+
+</div>
 
 <div class="week-entry">
 
