@@ -16,7 +16,6 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
-        special: ['Merriweather', 'serif'],
       },
     },
     typography: (theme) => ({

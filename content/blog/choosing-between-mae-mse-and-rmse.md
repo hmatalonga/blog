@@ -1,6 +1,6 @@
 ---
 title: 🧮 Choosing between MAE, MSE and RMSE
-date: 2021-05-12
+date: 2021-06-09
 published: false
 tags: ['Statistics']
 description: ''
