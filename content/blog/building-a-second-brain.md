@@ -3,7 +3,7 @@ title: 🧠 Building a Second Brain
 date: 2021-05-12
 published: true
 tags: ['Growth']
-thumbnail: 'https://unsplash.com/photos/gcsNOsPEXfs/download?force=true&w=640'
+thumbnail: 'https://source.unsplash.com/PP1yKpfA4HY/640x371'
 description: 'Recently, I stumbled upon a Youtube video talking about the idea of building a second brain, a system designed to organize our knowledge.'
 ---
 
