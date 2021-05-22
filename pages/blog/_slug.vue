@@ -67,6 +67,11 @@ export default {
           property: 'og:url',
           content: `https://hmatalonga.com${this.$route.path}`,
         },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.page.thumbnail,
+        },
         // Twitter Card
         {
           hid: 'twitter:title',
@@ -77,6 +82,11 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.page.description,
+        },
+        {
+          hid: 'twitter:image',
+          name: 'twitter:image',
+          content: this.page.thumbnail,
         },
       ],
     }
