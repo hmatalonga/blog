@@ -4,13 +4,13 @@ date: 2021-05-12
 published: true
 tags: ['Growth']
 thumbnail: 'https://source.unsplash.com/PP1yKpfA4HY/640x371'
-description: 'Recently, I stumbled upon a Youtube video talking about the idea of building a second brain, a system designed to organize our knowledge.'
+description: 'Recently, I stumbled upon a Youtube video talking about the idea of building a second brain, a system designed to organise our knowledge.'
 ---
 
 If you are anything like me, you consume tons of information every day. Over time, I built the habit of saving the most valuable things in someplace, like a note-taking app to read them later.
 But the problem is that I realised despite saving all these kinds of information, I would often forget what I had saved and why I did it at that time. There was a missing link between all those resources.
 
-Then recently, I stumbled upon a [Youtube video](https://youtu.be/96pSnIo4nDg) talking about the idea of building a second brain, a system designed to organize our knowledge. It got me pretty excited about the notion of having a systematic approach that would help me relate these bits of information with each other. If, together, I could put them to better use in the future when I needed them. So, I started to research more about it.
+Then recently, I stumbled upon a [Youtube video](https://youtu.be/96pSnIo4nDg) talking about the idea of building a second brain, a system designed to organise our knowledge. It got me pretty excited about the notion of having a systematic approach that would help me relate these bits of information with each other. If, together, I could put them to better use in the future when I needed them. So, I started to research more about it.
 
 ## What is Building a Second Brain?
 
