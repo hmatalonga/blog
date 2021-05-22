@@ -7,6 +7,21 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="week-entry">
 
+### Week of May 17 - May 23, 2021
+
+**💻 Work**
+- I did some more writing on my master thesis.
+- I published a new notebook on Kaggle about Credit Card Fraud Detection. [Link](https://www.kaggle.com/hmatalonga/credit-card-fraud-detection-with-lightgbm)
+
+**💡 Interesting stuff**
+- Cheat Sheets for Machine Learning and Data Science. [Link](https://sites.google.com/view/datascience-cheat-sheets)
+- Collection of resources for Data Science interview preparation. [Link](https://github.com/khanhnamle1994/cracking-the-data-science-interview)
+- Data science interview questions and answers. [Link](https://github.com/alexeygrigorev/data-science-interviews)
+
+</div>
+
+<div class="week-entry">
+
 ### Week of May 10 - May 16, 2021
 
 **💻 Work**
