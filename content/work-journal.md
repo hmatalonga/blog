@@ -11,7 +11,8 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 **💻 Work**
 - I did some more writing on my master thesis.
-- I published a new notebook on Kaggle about Credit Card Fraud Detection. [Link](https://www.kaggle.com/hmatalonga/credit-card-fraud-detection-with-lightgbm)
+- I created a new notebook on Kaggle about Credit Card Fraud Detection. [Link](https://www.kaggle.com/hmatalonga/credit-card-fraud-detection-with-lightgbm)
+- I published a blog post about Imbalanced Classification.
 
 **💡 Interesting stuff**
 - Cheat Sheets for Machine Learning and Data Science. [Link](https://sites.google.com/view/datascience-cheat-sheets)
