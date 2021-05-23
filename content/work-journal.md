@@ -1,5 +1,6 @@
 ---
-title: Work Journal
+title: "Work Journal"
+thumbnail: 'https://source.unsplash.com/DJ7bWa-Gwks/640x426'
 description: "Learning journey and work stuff. List of things I find interesting to share."
 ---
 
