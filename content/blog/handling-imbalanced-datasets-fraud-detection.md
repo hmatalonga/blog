@@ -4,7 +4,7 @@ date: 2021-05-23
 published: true
 tags: ['Machine Learning']
 thumbnail: 'https://source.unsplash.com/2s9N9qHsSCI/640x427'
-description: ''
+description: 'In my current research position, the project I am working on is related to financial fraud detection. In this particular domain, it is usual to have highly unbalanced data as the fraudulent transactions have a much lower volume than legitimate transactions.'
 ---
 
 In my current research position, the project I am working on is related to financial fraud detection. In this particular domain, it is usual to have highly unbalanced data as the fraudulent transactions have a much lower volume than legitimate transactions.
