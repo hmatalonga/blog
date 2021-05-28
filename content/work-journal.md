@@ -8,6 +8,18 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="week-entry">
 
+### Week of May 24 - May 30, 2021
+
+**💡 Interesting stuff**
+- Analytics is a mess. [Link](https://benn.substack.com/p/analytics-is-a-mess)
+- Good Data Scientist, Bad Data Scientist. [Link](https://ianwhitestone.work/good-ds-bad-ds)
+- DataTalks.Club Podcast: How to Market Yourself (without Being a Celebrity). [Link](https://datatalks.club/podcast/s03e07-market-yourself.html)
+- skorch: A scikit-learn compatible neural network library that wraps PyTorch. [Link](https://skorch.readthedocs.io/en/stable/index.html)
+
+</div>
+
+<div class="week-entry">
+
 ### Week of May 17 - May 23, 2021
 
 **💻 Work**
