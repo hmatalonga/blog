@@ -24,7 +24,7 @@ To illustrate this scenario, I will use a dataset about credit card fraud detect
 
 ## Introduction
 
-The first thing to consider is the possible cause of the imbalance of the data, that can help narrow down which approaches we may use. As I mentioned before, in this example, the imbalance is a characteristic of the problem domain. Before diving into the data, I will sum up a few strategies to handle imbalanced classification.
+The first thing to consider is the possible cause of the imbalance of the data, that can help narrow down which approaches we may use. As I mentioned before, in this example, imbalance is a characteristic of the problem domain. Before diving into the data, I will sum up a few strategies to handle imbalanced classification.
 
 ### Is it possible to collect more data?
 
@@ -56,7 +56,7 @@ Some options to consider:
 - **Recall**, a measure of a classifier's completeness. The recall is intuitively the ability of the classifier to find all the positive samples.
 - **F1 score**, a weighted average of the precision and recall. The relative contribution of precision and recall to the F1 score are equal.
 - **Matthews correlation coefficient**, a measure of the quality of binary and multi-class classifications. It takes into account all quadrants of the confusion matrix. It is generally regarded as a balanced measure that can be used even if the classes are very different.
-- **Precision-Recall Curve**, the precision-recall curve shows the tradeoff between precision and recall for different threshold. A high area under the curve represents both high recall and high precision.
+- **Precision-Recall Curve**, the precision-recall curve, shows the tradeoff between precision and recall for different threshold. A high area under the curve represents both high recall and high precision.
 
 ### Use different class weights or cost-sensitive models
 
@@ -393,7 +393,7 @@ skplt.metrics.plot_calibration_curve(y_test, [y_probas], ['LightGBM'], figsize=(
 
 Finally, we will look at two more plots:
 - The **calibration curve** helps determine whether or not you can interpret their predicted probabilities directly as a confidence level.
-- The **learning curve** helps diagnose whether the model is overfitting or underfitting the training data and with the validation data gives an idea of how well the model is generalising.
+- The **learning curve** helps diagnose whether the model is overfitting or underfitting the training data and, with the validation data, gives an idea of how well the model is generalising.
 
 <img class="mx-auto" src="/images/credit-card/plot_model_calibration.png" lazy>
 
@@ -407,6 +407,8 @@ skplt.estimators.plot_learning_curve(grid['clf'], X_train, y_train,
 ## Conclusions
 
 With this dataset, resampling the data didn't produce good results. Using under-sampling, over-sampling or a combination of both didn't improve compared with unchanged class proportions. Perhaps, since most variables were from a PCA transformation, that affected the impact of sampling. Another potential reason is the low number of fraudulent examples caused the under-sampling to produce a tiny dataset, lacking enough data to train a decent model.
+
+In a fraud detection system, two cases are essential for a successful solution: achieving the primary goal of detecting fraudulent transactions (true positive examples) and avoiding targeting genuine transactions as fraudulent (false positives). These two are the most costly to a business when the system does not perform well. This model delivers good results at identifying true positives with an F1 score of 0.86 and does not label any genuine transactions as fraudulent.
 
 You can check the complete code for this project in [this repository](https://github.com/hmatalonga/data-science-projects/tree/master/notebooks/credit-card).
 
