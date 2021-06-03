@@ -62,10 +62,19 @@
           Projects
         </h2>
         <div class="mt-2 md:mt-4 lg:mt-6">
-          <p class="text-gray-700 text-base lg:text-lg">
+          <p class="text-gray-700 text-base mb-2 md:mb-4 lg:text-lg">
             Currently, I am working in Academia as a Researcher. My main focus
             is on Privacy-Preserving Machine Learning and Transfer Learning with
             tree-based models.
+          </p>
+          <p class="text-gray-700 text-base lg:text-lg">
+            I also keep
+            <a
+              class="text-indigo-600 underline"
+              href="https://github.com/hmatalonga/data-science-projects"
+              >a repository</a
+            >
+            where I work on Data Science related projects and experiments.
           </p>
         </div>
       </div>
