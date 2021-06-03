@@ -305,10 +305,10 @@ print(f'Baseline AP score: {np.mean(ap_results)}')
 print(f'Baseline ROC AUC score: {np.mean(roc_auc_results)}')
 print(f'Baseline F1 score: {np.mean(f1_results)}')
 
-# Baseline MCC score: 0.09613585506472794
-# Baseline AP score: 0.017043358463682604
-# Baseline ROC AUC score: 0.6006605230375944
-# Baseline F1 score: 0.07692396099084955
+# Baseline MCC score: 0.23349372444054892
+# Baseline AP score: 0.08047800670729233
+# Baseline ROC AUC score: 0.7221486689515286
+# Baseline F1 score: 0.2026884752773078
 ```
 
 Our baseline model does not perform great. We can establish that it still does better than a random guess. Still is essential to mention that its performance can change slightly using different seed values. This code is just for demonstration purposes, and in a production environment, this needs to be tested more thoroughly with various trials to average the results.
@@ -373,14 +373,14 @@ y_probas = score_model(grid['clf'], scaled_X_test, y_test, feature_names)
 ```shell
                    pre       rec       spe        f1       geo       iba       sup
 
-      Legit       1.00      1.00      0.82      1.00      0.90      0.83     56864
-      Fraud       0.91      0.82      1.00      0.86      0.90      0.80        98
+      Legit       1.00      1.00      0.81      1.00      0.90      0.82     56864
+      Fraud       0.95      0.81      1.00      0.87      0.90      0.79        98
 
-avg / total       1.00      1.00      0.82      1.00      0.90      0.83     56962
+avg / total       1.00      1.00      0.81      1.00      0.90      0.82     56962
 
-MCC: 0.8612367949974785
-AP: 0.742431027969758
-ROC AUC: 0.9080929220309395
+MCC: 0.8757493736676086
+AP: 0.7676067300337754
+ROC AUC: 0.9030260528522045
 ```
 
 <img class="mx-auto" src="/images/credit-card/plot_classification_metrics.png" lazy>
@@ -408,7 +408,7 @@ skplt.estimators.plot_learning_curve(grid['clf'], X_train, y_train,
 
 With this dataset, resampling the data didn't produce good results. Using under-sampling, over-sampling or a combination of both didn't improve compared with unchanged class proportions. Perhaps, since most variables were from a PCA transformation, that affected the impact of sampling. Another potential reason is the low number of fraudulent examples caused the under-sampling to produce a tiny dataset, lacking enough data to train a decent model.
 
-In a fraud detection system, two cases are essential for a successful solution: achieving the primary goal of detecting fraudulent transactions (true positive examples) and avoiding targeting genuine transactions as fraudulent (false positives). These two are the most costly to a business when the system does not perform well. This model delivers good results at identifying true positives with an F1 score of 0.86 and does not label any genuine transactions as fraudulent.
+In a fraud detection system, two cases are essential for a successful solution: achieving the primary goal of detecting fraudulent transactions (true positive examples) and avoiding targeting genuine transactions as fraudulent (false positives). These two are the most costly to a business when the system does not perform well. This model delivers good results at identifying true positives with an F1 score of 0.87 and does not label any genuine transactions as fraudulent.
 
 You can check the complete code for this project in [this repository](https://github.com/hmatalonga/data-science-projects/tree/master/notebooks/credit-card).
 
