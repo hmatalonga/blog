@@ -8,6 +8,19 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="week-entry">
 
+### Week of May 31 - June 6, 2021
+
+**💻 Work**
+- I published a blog post covering the k-Nearest Neighbours algorithm.
+
+
+**💡 Interesting stuff**
+- Are Data Scientists Really Being Automated? [Link](https://youtu.be/2ohQ2Wn27KM)
+
+</div>
+
+<div class="week-entry">
+
 ### Week of May 24 - May 30, 2021
 
 **💡 Interesting stuff**
