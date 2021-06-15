@@ -8,6 +8,22 @@ description: "Learning journey and work stuff. List of things I find interesting
 
 <div class="week-entry">
 
+### Week of June 7 - June 13, 2021
+
+**💻 Work**
+- I did some more writing on my master thesis.
+
+**📚 Learnings**
+- I have implemented Linear and Logistic Regression algorithms from scratch. [Link](https://github.com/hmatalonga/data-science-bits)
+
+**💡 Interesting stuff**
+- Combining rule engines and machine learning. [Link](https://nlathia.github.io/2020/10/ML-and-rule-engines.html)
+- 6 Secrets of Early Data Science Career Success. [Link](https://youtu.be/Khb4_qvcOy4)
+
+</div>
+
+<div class="week-entry">
+
 ### Week of May 31 - June 6, 2021
 
 **💻 Work**
