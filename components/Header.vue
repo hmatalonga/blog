@@ -8,9 +8,9 @@
         class="flex items-center space-x-6 lg:space-x-8 lg:text-base xl:text-lg text-gray-600"
       >
         <div class="space-x-6 lg:space-x-8">
-          <nuxt-link class="hover:text-gray-800" to="/work-journal"
+          <!-- <nuxt-link class="hover:text-gray-800" to="/work-journal"
             >Work journal</nuxt-link
-          >
+          > -->
           <nuxt-link class="hover:text-gray-800" to="/blog">Blog</nuxt-link>
         </div>
         <div>
