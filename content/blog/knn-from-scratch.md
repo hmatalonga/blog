@@ -75,14 +75,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-from collections import Counter
 from sklearn.metrics import accuracy_score
-from sklearn.preprocessing import LabelEncoder
+from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 # Set seed for reproducibility
 SEED = 42
-np.random.seed(42)
+np.random.seed(SEED)
 ```
 </details>
 
@@ -121,9 +120,9 @@ class KNN:
     labels = self.y_train[k_idx]  
     
     # 4. Return the most common class label
-    most_common = Counter(labels).most_common(1)
+    labels_count = np.bincount(labels)
 
-    return most_common[0][0]
+    return np.argmax(labels_count)
 ```
 
 <details>
@@ -142,7 +141,7 @@ sns.relplot(x='flipper_length_mm', y='bill_length_mm', hue='species', data=data)
 
 ```python
 data = pd.get_dummies(data, columns=['island', 'sex'])
-data['species'] = LabelEncoder().fit_transform(data['species'])
+data['species'], _ = data['species'].factorize()
 
 data.head()
 ```
@@ -162,6 +161,15 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2,
 ```
 </details>
 
+Standardize both train and test data since the KNN algorithm uses a distance metric and is affected by the scale of the features.</summary>
+
+```python
+scaler = StandardScaler()
+
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
+
 Finally, we will fit a KNN model with *k* equal to three and make our predictions on the test set, and then we will evaluate the performance of our model by measuring the accuracy score. We will also create a KNN classifier using `sklearn` to compare how well our basic model delivers.
 
 ```python
@@ -170,7 +178,7 @@ clf = KNN(n_neighbors=3).fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
 print(f"Accuracy: {accuracy_score(y_test, y_pred):.3f}")
-# Accuracy: 0.806
+# Accuracy: 0.985
 ```
 
 ```python
@@ -181,12 +189,12 @@ sklearn_knn = KNeighborsClassifier(n_neighbors=3).fit(X_train, y_train)
 y_pred = sklearn_knn.predict(X_test)
 
 print(f"Accuracy: {accuracy_score(y_test, y_pred):.3f}")
-# Accuracy: 0.806
+# Accuracy: 0.985
 ```
 
 ## Summary
 
-The k-Nearest Neighbours (KNN) is a simple supervised algorithm used in classification and regression problems. We have implemented a basic version of a KNN classifier to help us predict the species of penguins from Antarctica. We achieved an 80% accuracy score which is a pretty good result for the task at hand.
+The k-Nearest Neighbours (KNN) is a simple supervised algorithm used in classification and regression problems. We have implemented a basic version of a KNN classifier to help us predict the species of penguins from Antarctica. We achieved an ~98% accuracy score which is a pretty good result for the task at hand.
 Implementing machine learning algorithms from scratch is, in my opinion, an excellent way to learn the inner works of the different machine learning techniques.
 
 You can find the complete code in [this repository](https://github.com/hmatalonga/data-science-bits/blob/master/notebooks/knn.ipynb).
