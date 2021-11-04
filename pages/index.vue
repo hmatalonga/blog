@@ -8,7 +8,7 @@
     <p
       class="mt-8 md:mt-10 xl:mt-16 text-lg text-gray-700 md:text-xl lg:text-2xl"
     >
-      My name is Hugo Matalonga, and I am a data scientist and a web developer
+      My name is Hugo Matalonga, and I am a Data Scientist and a Web Developer
       based in Portugal.
     </p>
     <div
