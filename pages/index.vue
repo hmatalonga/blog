@@ -98,9 +98,7 @@
           <p class="text-gray-700 text-base mb-2 md:mb-4 lg:text-lg">
             Currently, I work as a Data Scientist at Mobileum within the Risk
             Engineering team, where I help develop Machine Learning solutions
-            for fraud detection in telecommunications. Previously, I worked in
-            Academia as a Researcher with the main focus on Privacy-Preserving
-            Machine Learning and Transfer Learning with tree-based models.
+            for fraud detection in telecommunications.
           </p>
           <p class="text-gray-700 text-base lg:text-lg">
             I also keep
