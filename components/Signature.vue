@@ -4,7 +4,7 @@
   >
     <img
       class="w-16 h-16 rounded-full"
-      src="~/assets/images/profile.jpg"
+      src="~/assets/images/profile_alt.jpg"
       alt="Hugo Matalonga"
     />
     <div class="mt-2 text-center">
