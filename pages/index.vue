@@ -1,18 +1,44 @@
 <template>
   <div>
     <h1
-      class="text-5xl font-semibold leading-tight text-gray-800 md:text-6xl lg:text-7xl lg:font-medium xl:text-8xl"
+      class="
+        text-5xl
+        font-semibold
+        leading-tight
+        text-gray-800
+        md:text-6xl
+        lg:text-7xl lg:font-medium
+        xl:text-8xl
+      "
     >
       Hi there! 👋
     </h1>
     <p
-      class="mt-8 md:mt-10 xl:mt-16 text-lg text-gray-700 md:text-xl lg:text-2xl"
+      class="
+        mt-8
+        md:mt-10
+        xl:mt-16
+        text-lg text-gray-700
+        md:text-xl
+        lg:text-2xl
+      "
     >
       My name is Hugo Matalonga, and I am a Data Scientist and a Web Developer
       based in Portugal.
     </p>
     <div
-      class="flex items-center justify-start mt-6 text-xs font-medium text-gray-700 space-x-6 sm:text-sm lg:text-base lg:mt-8"
+      class="
+        flex
+        items-center
+        justify-start
+        mt-6
+        text-xs
+        font-medium
+        text-gray-700
+        space-x-6
+        sm:text-sm
+        lg:text-base lg:mt-8
+      "
     >
       <a
         href="mailto:hello@hmatalonga.com"
@@ -55,7 +81,14 @@
       >
     </div>
     <div
-      class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8 mt-10 md:mt-16 lg:mt-20"
+      class="
+        grid grid-cols-1
+        md:grid-cols-2
+        gap-x-12 gap-y-8
+        mt-10
+        md:mt-16
+        lg:mt-20
+      "
     >
       <div>
         <h2 class="text-gray-800 font-semibold text-lg lg:text-xl xl:text-2xl">
@@ -63,9 +96,11 @@
         </h2>
         <div class="mt-2 md:mt-4 lg:mt-6">
           <p class="text-gray-700 text-base mb-2 md:mb-4 lg:text-lg">
-            Currently, I am working in Academia as a Researcher. My main focus
-            is on Privacy-Preserving Machine Learning and Transfer Learning with
-            tree-based models.
+            Currently, I work as a Data Scientist at Mobileum within the Risk
+            Engineering team, where I help develop Machine Learning solutions
+            for fraud detection in telecommunications. Previously, I worked in
+            Academia as a Researcher with the main focus on Privacy-Preserving
+            Machine Learning and Transfer Learning with tree-based models.
           </p>
           <p class="text-gray-700 text-base lg:text-lg">
             I also keep
