@@ -15,7 +15,7 @@ While I like to keep a relatively low profile in my personal life, I want to hig
 
 Fortunately, everyone in my family remained safe and healthy, and that was one of the most significant achievements of the year. Moreover, in my home country, Portugal, the vaccines were well accepted by the population, and we quickly reached a considerable percentage of people vaccinated. Let's see how the situation will evolve in the future, and I hope that we can finally resume all activities as before with time.
 
-Still, by the end of the first quarter of 2021, I moved to my rental apartment with my girlfriend. Also, this year I believe I came to figure out my system to organise my personal finances regarding savings and investments, and I managed to stay consistent during the entire year.
+Still, by the end of the first quarter of 2021, I moved to a rented apartment with my girlfriend. Also, this year I believe I came to figure out my system to organise my personal finances regarding savings and investments, and I managed to stay consistent during the entire year.
 
 ## Improving my home office
 
