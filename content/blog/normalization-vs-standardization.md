@@ -1,7 +1,7 @@
 ---
 title: "⚖ Normalisation vs Standardisation: What are the differences?"
 date: 2023-02-20
-published: false
+published: true
 tags: ['Machine Learning']
 thumbnail: 'https://source.unsplash.com/0k9fu-P-110/640x360'
 description: 'Normalisation and standardisation are often used interchangeably, but they are not the same. In this blog post, I will discuss the differences between the two.'
@@ -36,15 +36,15 @@ x_std = (x - mean(x)) / std(x)
 Where `x_std` is the standardised value of `x`, `mean(x)` and `std(x)` are the mean and standard deviation of `x` in the dataset, respectively.
 For example, suppose we have a dataset containing a company's employees' salaries. The salaries range from 30,000 to 100,000 dollars, and the mean wage is 60,000, with a standard deviation of 20,000. We would use the above formula for the salary feature to standardise this dataset.
 
+## Guidelines for choosing between normalisation and standardisation
+
 Normalisation and standardisation transform the data values to a common scale, but the approach differs. The significant differences are:
 
 1. Normalisation scales the data between 0 and 1, while standardisation scales the data to have a mean of zero and a standard deviation of one.
 2. Normalisation is useful when the scale of data varies significantly, and it is essential to bring all the data into a uniform range. Standardisation is useful when the scale of data is not important, but the distribution shape of the data is essential.
 3. Normalisation preserves the original distribution shape of the data, while standardisation changes the distribution shape of the data to a normal distribution.
 
-## Guidelines for choosing between normalisation and standardisation
-
-Normalisation and standardisation are techniques used to transform data for analysis, but they have different use cases. Here are some guidelines for when to use each method:
+Here are some guidelines for when to use each method:
 
 ### Normalisation:
 
