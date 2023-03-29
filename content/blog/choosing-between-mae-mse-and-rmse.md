@@ -3,6 +3,7 @@ title: 🧮 Choosing between MAE, MSE and RMSE
 date: 2023-03-29
 published: true
 tags: ['Statistics']
+thumbnail: 'https://source.unsplash.com/qdVtiLN7x1A/640x400'
 description: 'So, how do you choose between MAE, MSE and RMSE? There is no definitive answer to which metric to use for regression problems. It depends on your data, your model and your objective. In this blog post, I will explain the meaning and intuition behind these metrics and provide some guidance on when to use which one.'
 --- 
 
