@@ -170,9 +170,6 @@ export default {
       },
     ]
   },
-  tailwindcss: {
-    jit: true
-  },
   /*
    ** Build configuration
    ** See https://nuxtjs.org/api/configuration-build/
