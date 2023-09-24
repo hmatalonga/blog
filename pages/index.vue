@@ -63,9 +63,7 @@
         </h2>
         <div class="mt-2 md:mt-4 lg:mt-6">
           <p class="text-gray-700 text-base mb-2 md:mb-4 lg:text-lg">
-            Currently, I work as a Data Scientist at Mobileum within the Risk
-            Engineering team, where I help develop Machine Learning solutions
-            for fraud detection in telecommunications.
+            Currently, I work as a Data Scientist at FARFETCH within the Search team.
           </p>
           <p class="text-gray-700 text-base lg:text-lg">
             I also keep
